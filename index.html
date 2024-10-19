@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Valhalla AI</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h3 class="navbar__logo">Valhalla AI</h3>
+        <button class="navbar__button" id="themeToggler"><i class='bx bx-sun' ></i></button>
+    </nav>
+
+    <header class="header">
+        <div class="header__title">
+            <h1>Seek answers. Valhalla AI will deliver.</h1>
+            <h2>Ask Me Anything!</h2>
+        </div>
+        <div class="suggests">
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    What’s one idea that could change the world in the next 10 years?    
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-stopwatch'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Is God real?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bxs-wrench' ></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    If you could have a conversation with anyone, living or dead, who would it be and why?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-edit'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    If you could solve any global problem instantly, what would it be?    
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-compass'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="chats"></section>
+
+    <section class="prompt">
+        <form action="#" class="prompt__form" novalidate>
+            <div class="prompt__input-wrapper">
+                <input type="text" placeholder="Enter a prompt here" class="prompt__form-input"
+                required>
+                <button class="prompt__form-button"
+                id="sendButton">
+                    <i class='bx bx-send'></i>
+                </button>
+                <button class="prompt__form-button"
+                id="deleteButton">
+                    <i class='bx bxs-trash'></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt__disclaim">
+            Valhalla AI may display inaccurate info so please double-check on your own!
+        </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
